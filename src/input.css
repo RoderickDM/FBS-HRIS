@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .header{
+        @apply border-solid border-[##e5e7eb;]
+    }
+    .header .toggle__menu span.top_border{
+        @apply border-l-[2px] h-[3rem] border-[hsl(326.59,80%,21.57%)]
+    }
+    .header .toggle__btn span.hdr__btn{
+        @apply w-[.9rem] h-[.15rem] bg-gray-400 block rounded-full flex flex-col items-center
+    }
+    .header .toggle__btn.open span.hdr__btn:first-child{
+        @apply rotate-[-45deg]
+    }
+    .header .toggle__btn.open span.hdr__btn:nth-child(2){
+        @apply opacity-0
+    }
+    .header .toggle__btn.open span.hdr__btn:last-child{
+        @apply rotate-[45deg]
+    }
+    .header .toggle__menu a.logout:hover{
+        @apply bg-[hsl(326.59,80%,21.57%)] text-white border-white
+    }
+    .header .toggle__btn:hover{
+        @apply bg-[hsl(326.59,80%,21.57%)] text-white
+    }
+    .header .toggle__btn:hover span.hdr__btn{
+        @apply bg-white
+    }
+
+    /* nav bar */
+    .nav__bar ul li{
+        @apply flex  items-center gap-[1rem] p-[1rem] text-[.9rem] 
+    }
+    .nav__bar ul li:hover{
+        @apply bg-white text-[hsl(326.59,80%,21.57%)] rounded-l-[2rem]
+    }
+    .nav__bar{
+        @apply ease-in duration-[.2s]
+    }
+    .nav__bar.open{
+        @apply left-[0rem] ease-in duration-[.2s]
+    }
+
+    /*hris-content*/
+    .hris__content{
+        @apply mx-[1rem]
+    }
+    .wrapper h2{
+        @apply text-[1.3rem] font-semibold py-[1rem] border-b-[1px]
+    }
+    .overview__tardiness{
+        @apply border-[1px] px-[1rem] mt-[1rem]
+    }
+    .overview__title{
+        @apply my-[1rem]
+    }
+    .overview__title h4{
+        @apply text-[.9rem] font-semibold text-[hsl(326.59,80%,21.57%)]
+    }
+    .overview__title a{
+        @apply text-[.8rem] text-[hsl(326.59,80%,21.57%)] flex gap-[.5rem] items-center
+    }
+    table, tr, th, {
+        @apply border-[1px]    
+    }
+    th{
+        @apply bg-gray-300
+    }
+    .overview__title{
+        @apply flex justify-between
+    }
+}

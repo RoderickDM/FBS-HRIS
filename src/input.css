@@ -4,7 +4,7 @@
 
 @layer components{
     .header{
-        @apply border-solid border-[##e5e7eb;]
+        @apply border-solid border-[#e5e7eb;]
     }
     .header .toggle__menu span.top_border{
         @apply border-l-[2px] h-[3rem] border-[hsl(326.59,80%,21.57%)]
@@ -13,13 +13,13 @@
         @apply w-[.9rem] h-[.15rem] bg-gray-400 block rounded-full flex flex-col items-center
     }
     .header .toggle__btn.open span.hdr__btn:first-child{
-        @apply rotate-[-45deg]
+        @apply translate-y-[4px] rotate-[-45deg] transition-all
     }
     .header .toggle__btn.open span.hdr__btn:nth-child(2){
-        @apply opacity-0
+        @apply opacity-0 transition-all
     }
     .header .toggle__btn.open span.hdr__btn:last-child{
-        @apply rotate-[45deg]
+        @apply translate-y-[-4px] rotate-[45deg] transition-all
     }
     .header .toggle__menu a.logout:hover{
         @apply bg-[hsl(326.59,80%,21.57%)] text-white border-white
@@ -47,30 +47,154 @@
 
     /*hris-content*/
     .hris__content{
+        @apply mx-[1rem] w-full
+    }
+    .hris__content__title{
         @apply mx-[1rem]
     }
-    .wrapper h2{
+    .hris__content h2{
         @apply text-[1.3rem] font-semibold py-[1rem] border-b-[1px]
     }
     .overview__tardiness{
-        @apply border-[1px] px-[1rem] mt-[1rem]
+        @apply border-[1px] px-[1rem] mt-[1rem] rounded-md
     }
-    .overview__title{
-        @apply my-[1rem]
+    .hris__title{
+        @apply my-[1rem] flex justify-between
     }
-    .overview__title h4{
-        @apply text-[.9rem] font-semibold text-[hsl(326.59,80%,21.57%)]
+    .hris__title h4{
+        @apply text-[1rem] font-semibold text-[hsl(326.59,80%,21.57%)]
     }
-    .overview__title a{
+    .hris__title a{
         @apply text-[.8rem] text-[hsl(326.59,80%,21.57%)] flex gap-[.5rem] items-center
     }
     table, tr, th, {
-        @apply border-[1px]    
+        @apply border-[2px]
     }
-    th{
-        @apply bg-gray-300
+    th {
+        @apply bg-gray-300 text-[.9rem] h-[2rem]
     }
-    .overview__title{
-        @apply flex justify-between
+    td{
+        @apply text-[.9rem] h-[2rem] 
+    }
+    tr{
+        @apply hover:bg-gray-100
+    }
+    
+    /*hris-content-announcements*/
+    .overview__announcements{
+        @apply border-[1px] p-[1rem] rounded-md mt-[1rem]
+    }
+    .announcements__title{
+        @apply flex items-center justify-between
+    }
+    .announcements__title h4{
+        @apply text-[1rem] font-semibold text-[hsl(326.59,80%,21.57%)]
+    }
+    .announcements__title i{
+        @apply text-[hsl(326.59,80%,21.57%)] text-[.8rem]
+    }
+    .announcements__content i{
+        @apply text-[5rem]
+    }
+    .announcements__content{
+        @apply text-gray-400 flex flex-col items-center gap-[1rem] py-[1rem]
+    }
+    /*hris-content-wfh*/
+    .overview__wfh{
+        @apply border-[1px] p-[1rem] rounded-md mt-[1rem] w-full
+    }
+    .wfh__title{
+        @apply flex items-center justify-between
+    }
+    .wfh__title h4{
+        @apply text-[1rem] font-semibold text-[hsl(326.59,80%,21.57%)]
+    }
+    .wfh__title a{
+        @apply text-[.8rem] text-[hsl(326.59,80%,21.57%)] flex gap-[.5rem] items-center
+    }
+    .wfh__content{
+        @apply flex items-center gap-[1rem] border-b-[1px]
+    }
+    .wfh__content i{
+        @apply text-[2rem] text-gray-400
+    }
+    .wfh__desc{
+        @apply mt-[1rem]
+    }
+    .wfh__content h4{
+        @apply font-semibold leading-[1]
+    }
+    .wfh__content p.wfh__dept{
+        @apply text-[.8rem]
+    }
+    .wfh__content p.wfh__day{
+        @apply text-[.8rem] text-[hsl(326.59,80%,21.57%)]
+    }
+    /*hris-content-onLeave*/
+    .overview__onLeave{
+        @apply border-[1px] p-[1rem] rounded-md mt-[1rem]
+    }
+    .onLeave__title{
+        @apply flex items-center justify-between
+    }
+    .onLeave__title h4{
+        @apply text-[1rem] font-semibold text-[hsl(326.59,80%,21.57%)]
+    }
+    .onLeave__title i{
+        @apply text-[hsl(326.59,80%,21.57%)] text-[.8rem]
+    }
+    .onLeave__content i{
+        @apply text-[5rem]
+    }
+    .onLeave__content{
+        @apply text-gray-400 flex flex-col items-center gap-[1rem] py-[1rem]
+    }
+    /*hris-content-bday*/
+    .overview__bday{
+        @apply border-[1px] p-[1rem] rounded-md mt-[1rem]
+    }
+    .bday__title{
+        @apply flex items-center justify-between
+    }
+    .bday__title h4{
+        @apply text-[1rem] font-semibold text-[hsl(326.59,80%,21.57%)]
+    }
+    .bday__title i{
+        @apply text-[hsl(326.59,80%,21.57%)] text-[.8rem]
+    }
+    .bday__content{
+        @apply flex items-center gap-[1rem] mt-[1rem]  pb-[1rem] border-b-[1px]
+    }
+    .bday__content img{
+        @apply w-[4rem] rounded-full
+    }
+    .bday__content h4{
+        @apply font-semibold leading-[1]
+    }
+    .bday__content p{
+        @apply text-[.8rem]
+    }
+    .bday__desc{
+        @apply w-full flex items-center justify-between
+    }
+    .bday__desc i{
+        @apply text-[2rem] text-gray-600
+    }
+
+    /*footer*/
+    .footer{
+        @apply pt-[5rem]
+    }
+    .footer__wrapper{
+        @apply flex flex-col items-center
+    }
+    .footer__wrapper img{
+        @apply w-[7rem]
+    }
+    .footer__wrapper p{
+        @apply text-[.8rem]
+    }
+    .footer__wrapper a:hover{
+        @apply text-[hsl(326.59,80%,21.57%)]
     }
 }

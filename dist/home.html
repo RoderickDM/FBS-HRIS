@@ -32,68 +32,313 @@
             </div>
         </div>
     </header>
-
-    <div class="nav__bar w-[60%] h-[100vh] bg-gradient-to-r from-[hsl(325,63%,31%)] to-[hsl(325,63%,40%)] text-white fixed left-[-100rem] lg:left-[0rem] lg:w-[11.5%]">
-          <ul class="flex flex-col">
-            <li><i class="fa-solid fa-calendar-days"></i><a href="">Overviews</a></li>
-            <li><i class="fa-solid fa-calendar-check"></i><a href="">Attendance</a></li>
-            <li><i class="fa-solid fa-calendar-days"></i><a href="">Leaves</a></li>
-            <li><i class="fa-solid fa-briefcase"></i><a href="">Overtime</a></li>
-            <li><i class="fa-solid fa-list-check"></i><a href="">Task</a></li>
-            <li><i class="fa-solid fa-circle-info"></i><a href="">My Info</a></li>
-          </ul>  
-    </div>
-    <div class="hris__content">
-        <div class="wrapper lg:pl-[15rem]">
+    <div class="hris__home overflow-hidden">
+        <div class="nav__bar w-[40%] h-[100%] bg-gradient-to-r from-[hsl(325,63%,31%)] to-[hsl(325,63%,40%)] text-white fixed left-[-100rem] lg:left-[0rem] lg:w-[11.5%]">
+            <ul class="flex flex-col">
+              <li><i class="fa-solid fa-calendar-days"></i><a href="">Overviews</a></li>
+              <li><i class="fa-solid fa-calendar-check"></i><a href="">Attendance</a></li>
+              <li><i class="fa-solid fa-calendar-days"></i><a href="">Leaves</a></li>
+              <li><i class="fa-solid fa-briefcase"></i><a href="">Overtime</a></li>
+              <li><i class="fa-solid fa-list-check"></i><a href="">Task</a></li>
+              <li><i class="fa-solid fa-circle-info"></i><a href="">My Info</a></li>
+            </ul>  
+      </div>
+      <div class="hris__content">
+        <div class="hris__content__title">
             <h2>Welcome Roderick!</h2>
-            <div class="overview__left">
-                <div class="overview__tardiness">
-                    <div class="overview__title">
-                        <h4>Tardiness</h4>
+        </div>
+          <div class="wrapper lg:flex mx-[1rem]">
+              <div class="overview__left">
+                  <div class="overview__tardiness">
+                      <div class="hris__title">
+                          <h4>Tardiness</h4>
+                          <a href="">View all <i class="fa-solid fa-thumbtack"></i></a>
+                      </div>
+                      <div class="table__container overflow-x-scroll">
+                        <table class="whitespace-nowrap text-left">
+                            <tr>
+                                <th class="text-center">#</th>
+                                <th class="min-w-[14rem]">Name</th>
+                                <th class="min-w-[10rem]">Date</th>
+                                <th class="min-w-[5rem]">Time-in</th>
+                                <th class="min-w-[5rem]">Tardy</th>
+                                <th class="min-w-[20rem]">Offense</th>
+                                <th class="min-w-[10rem]">Remarks</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td>Delmonte Jr., Roderick</td>
+                                <td>Mon Aug 14,2023</td>
+                                <td>6:56am</td>
+                                <td>0h 0m</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+                      </div>
+                  </div>
+                  <div class="overview__announcements">
+                    <div class="announcements__title">
+                        <h4>Announcements</h4>
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </div>
+                    <div class="announcements__content">
+                        <i class="fa-solid fa-bullhorn"></i>
+                        <p>No announcement yet.</p>
+                    </div>
+                  </div>
+              </div>
+              <div class="overview__right">
+                <div class="overview__wfh">
+                    <div class="wfh__title">
+                        <h4>Work from Home</h4>
                         <a href="">View all <i class="fa-solid fa-thumbtack"></i></a>
                     </div>
-                    <table class="whitespace-nowrap text-left p-[.25rem]">
-                        <tr>
-                            <th class="text-center">#</th>
-                            <th class="min w-[14rem]">Name</th>
-                            <th class="min w-[10rem]">Date</th>
-                            <th class="min w-[5rem]">Time-in</th>
-                            <th class="min w-[5rem]">Tardy</th>
-                            <th class="min w-[20rem]">Offense</th>
-                            <th class="min w-[10rem]">Remarks</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Delmonte Jr., Roderick</td>
-                            <td>Mon Aug 14,2023</td>
-                            <td>6:56am</td>
-                            <td>0h 0m</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Delmonte Jr., Roderick</td>
-                            <td>Mon Aug 14,2023</td>
-                            <td>6:56am</td>
-                            <td>0h 0m</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>Delmonte Jr., Roderick</td>
-                            <td>Mon Aug 14,2023</td>
-                            <td>6:56am</td>
-                            <td>0h 0m</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </table>
+                    <div class="wfh__content">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="wfh__desc">
+                            <h4>Arzola, Aeana Katrina</h4>
+                            <p class="wfh__dept">Enagic</p>
+                            <p class="wfh__day">Wednesday</p>
+                        </div>
+                    </div>
+                    <div class="wfh__content">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="wfh__desc">
+                            <h4>Bosinos, Maribel</h4>
+                            <p class="wfh__dept">Enagic</p>
+                            <p class="wfh__day">Wednesday</p>
+                        </div>
+                    </div>
+                    <div class="wfh__content">
+                        <i class="fa-solid fa-house"></i>
+                        <div class="wfh__desc">
+                            <h4>Calalang, Virgil</h4>
+                            <p class="wfh__dept">Enagic</p>
+                            <p class="wfh__day">Wednesday</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="overview__onLeave">
+                    <div class="onLeave__title">
+                        <h4>On Leave</h4>
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </div>
+                    <div class="onLeave__content">
+                        <i class="fa-solid fa-tree-city"></i>
+                        <p>No is on leave today.</p>
+                    </div>
+                </div>
+                <div class="overview__bday">
+                    <div class="bday__title">
+                        <h4>Birthdays</h4>
+                        <i class="fa-solid fa-thumbtack"></i>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/Bhea.png" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Del Monte, Ronica Bianca</h4>
+                            <p>Administration</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Sun Aug 20,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/dichoso.jpg" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Dichoso, Jhonny Jose</h4>
+                            <p>Information Technology</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Wed Aug 16,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/Bhea.png" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Del Monte, Ronica Bianca</h4>
+                            <p>Administration</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Sun Aug 20,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/dichoso.jpg" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Dichoso, Jhonny Jose</h4>
+                            <p>Information Technology</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Wed Aug 16,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/Bhea.png" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Del Monte, Ronica Bianca</h4>
+                            <p>Administration</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Sun Aug 20,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/dichoso.jpg" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Dichoso, Jhonny Jose</h4>
+                            <p>Information Technology</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Wed Aug 16,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/Bhea.png" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Del Monte, Ronica Bianca</h4>
+                            <p>Administration</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Sun Aug 20,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/dichoso.jpg" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Dichoso, Jhonny Jose</h4>
+                            <p>Information Technology</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Wed Aug 16,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/Bhea.png" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Del Monte, Ronica Bianca</h4>
+                            <p>Administration</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Sun Aug 20,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    <div class="bday__content">
+                        <img src="../img/dichoso.jpg" alt="">
+                        <div class="bday__desc">
+                            <div class="bday_user">
+                                <h4>Dichoso, Jhonny Jose</h4>
+                            <p>Information Technology</p>
+                            <p class="text-[hsl(326.59,80%,21.57%)]">Wed Aug 16,2023</p>
+                            </div>
+                            <div class="bday__cake"><i class="fa-solid fa-cake-candles"></i></div>   
+                        </div>
+                    </div>
+                    </div>
+                </div>
+              </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer__wrapper">
+            <img src="../img/download (2)" alt="">
+            <p>© 2023 | <a href="">Support <i class="fa-solid fa-circle-info"></i></a></p>
         </div>
+      </footer>
     </div>
+    </div>
+    
 
 
     <script src="../js/script.js"></script>

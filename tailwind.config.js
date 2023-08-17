@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       color:{
-        'pula':'hsl(326.59,80%,21.57%)'
+        'puladiant':'hsl(326.59,80%,21.57%)'
       },
     },
   },

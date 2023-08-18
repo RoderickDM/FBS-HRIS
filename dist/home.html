@@ -8,14 +8,14 @@
     <script src="https://kit.fontawesome.com/3b38699021.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class="header border-b-[2px] border-[hsl(326.59,80%,21.57%)] fixed top-0 w-full z-10">
+    <header class="header border-b-[2px] border-[#630b3c] fixed top-0 w-full z-10">
         <div class="header__wrapper flex items-center justify-between mx-[.5rem] h-[4rem]">
             <div class="branding flex items-center gap-[1rem]">
                 <img src="../img/logo-fbs.png" alt="" class="w-[9.5rem] hidden lg:block">
                 <h3 class="font-semibold text-[.9rem]">HUMAN RESOURCE INFORMATION SYSTEM</h3>
             </div>
             <div class="toggle__menu flex items-center gap-[1rem] ">
-                <div class="header__user flex items-center gap-[1rem] hidden lg:flex">
+                <div class="header__user flex items-center gap-[1rem] hidden lg:flex md:flex">
                     <img src="../img/delmonte-r.jpg "alt="" class="w-[2.5rem] rounded-full">
                     <div class="header__user__desc leading-[1.3]">
                         <h4 class="font-semibold">Hi Roderick,</h4>
@@ -23,25 +23,26 @@
                     </div>
                 </div>
                 <span class="top_border"></span>
-                <div class="toggle__btn border-[1px] border-gray-400 py-[.3rem] px-[.4rem] rounded lg:hidden">
+                <div class="toggle__btn border-[1px] border-gray-400 py-[.3rem] px-[.4rem] rounded lg:hidden md:hidden">
                     <span class="hdr__btn"></span>
                     <span class="hdr__btn my-[.1rem]"></span>
                     <span class="hdr__btn"></span>
                 </div>
-                <a href="" class="logout border-[1px] border-gray-400 rounded flex items-center py-[.2rem] px-[.5rem] text-gray-500 hidden lg:block"><i class="fa-solid fa-right-from-bracket text-[1.5rem]"></i></a>
+                <a href="" class="logout border-[1px] border-gray-400 rounded flex items-center py-[.2rem] px-[.5rem] text-gray-500 hidden md:block lg:block"><i class="fa-solid fa-right-from-bracket text-[1.5rem]"></i></a>
             </div>
         </div>
     </header>
-    <div class="nav__bar w-[40%] h-[100%] bg-gradient-to-t from-[hsl(326.59,80%,32%)] to-[hsl(325,63%,27%)] text-white fixed left-[-100rem] top-0 pt-[4rem] lg:left-[0rem] lg:w-[11rem]">
-        <ul>
-          <li class="navItem active"><a href="javascript:(0)"><i class="fa-solid fa-calendar-days"></i>Overviews</a></li>
-          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-calendar-check"></i>Attendance</a></li>
-          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-calendar-days"></i>Leaves</a></li>
-          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-briefcase"></i>Overtime</a></li>
-          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-list-check"></i>Task</a></li>
-          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-circle-info"></i>My Info</a></li>
-        </ul>  
-  </div>
+    <div class="nav__bar w-[40%] h-[100%] bg-gradient-to-t from-[hsl(326.59,80%,32%)] to-[hsl(325,63%,27%)] text-white fixed left-[-100rem] top-0 pt-[4rem] md:left-[0rem] md:w-[5rem]  lg:left-[0rem] lg:w-[11rem]">
+        <ul class="">
+          <li class="navItem active"><a href="javascript:(0)"><i class="fa-solid fa-calendar-days"></i><span class="md:hidden lg:block">Overviews</span></a></li>
+          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-calendar-check"></i><span class="md:hidden lg:block">Attendance</span></a></li>
+          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-calendar-days"></i><span class="md:hidden lg:block">Leaves</span></a></li>
+          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-briefcase"></i><span class="md:hidden lg:block">Overtime</span></a></li>
+          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-list-check"></i><span class="md:hidden lg:block">Task</span></a></li>
+          <li class="navItem"><a href="javascript:(0)"><i class="fa-solid fa-circle-info"></i><span class="md:hidden lg:block">My Info</span></a></li>
+        </ul>
+        <a href="" class="navItem flex items-center text-[.9rem] hover:bg-gradient-to-r from-[hsl(326.59,80%,21.57%)] to-[hsl(326.59,80%,50%)] text-white rounded-l-[2rem]"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>  
+    </div>
     <div class="hris__home overflow-hidden">
         <div class="hris__wrapper">
             <div class="hris__content">
@@ -58,7 +59,7 @@
                               <div class="table__container overflow-x-scroll">
                                 <table class="whitespace-nowrap text-left">
                                     <tr>
-                                        <th class="text-center">#</th>
+                                        <th class="min-w-[2rem] text-center">#</th>
                                         <th class="min-w-[14rem]">Name</th>
                                         <th class="min-w-[10rem]">Date</th>
                                         <th class="min-w-[5rem]">Time-in</th>
@@ -67,7 +68,7 @@
                                         <th class="min-w-[10rem]">Remarks</th>
                                     </tr>
                                     <tr>
-                                        <td>1</td>
+                                        <td class="tbl_no">1</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -76,7 +77,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>2</td>
+                                        <td class="tbl_no">2</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -85,7 +86,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>3</td>
+                                        <td class="tbl_no">3</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -94,7 +95,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>4</td>
+                                        <td class="tbl_no">4</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -103,7 +104,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>5</td>
+                                        <td class="tbl_no">5</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -112,7 +113,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>6</td>
+                                        <td class="tbl_no">6</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -121,7 +122,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>7</td>
+                                        <td class="tbl_no">7</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -130,7 +131,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>8</td>
+                                        <td class="tbl_no">8</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -139,7 +140,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>9</td>
+                                        <td class="tbl_no">9</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -148,7 +149,7 @@
                                         <td></td>
                                     </tr>
                                     <tr>
-                                        <td>10</td>
+                                        <td class="tbl_no">10</td>
                                         <td>Delmonte Jr., Roderick</td>
                                         <td>Mon Aug 14,2023</td>
                                         <td>6:56am</td>
@@ -328,18 +329,44 @@
                             </div>
                             </div>
                     </div>
-                      </div>
-              </div>
+                </div>
+            </div>
+            <!-- <div class="hris__content">
+                <div class="hris__content__title">
+                    <h2>Attendance</h2>
+                </div>
+                <div class="hris__item__content">
+                    <ul class="pt-2 pb-20">
+                        <li class="group">
+                            <a href="" class="w-full py-2">
+                                <div class="hris__item__name">
+                                    <i class="fa-solid fa-person-running"></i> 
+                                    <h4 class="text-[.9rem] font-semibold">Tardiness</h4>
+                                </div>
+                                <p class="text-[.9rem]">Record of employees tardiness.</p>
+                            </a>
+                            <a href="" class="action__btn group-hover:bg-[hsl(326.59,80%,21.57%)] group-hover:text-white"><i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li class="group">
+                            <a href="" class="w-full py-2">
+                                <div class="hris__item__name">
+                                    <i class="fa-solid fa-user-clock"></i> 
+                                    <h4 class="text-[.9rem] font-semibold">Undertime</h4>
+                                </div>
+                                <p class="text-[.9rem]">Record of employees who leaves and quits work earlier than the usual 8-hours work schedule.</p>
+                            </a>
+                            <a href="" class="action__btn group-hover:bg-[hsl(326.59,80%,21.57%)] group-hover:text-white"><i class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+            <footer class="footer">
+                <div class="footer__wrapper">
+                    <img src="../img/download (2)" alt="">
+                    <p>© 2023 | <a href="">Support <i class="fa-solid fa-circle-info"></i></a></p>
+                </div>
+            </footer>
         </div>
-      
-
-      <footer class="footer">
-        <div class="footer__wrapper">
-            <img src="../img/download (2)" alt="">
-            <p>© 2023 | <a href="">Support <i class="fa-solid fa-circle-info"></i></a></p>
-        </div>
-      </footer>
-    </div>
     </div>
 
     <script src="../js/script.js"></script>

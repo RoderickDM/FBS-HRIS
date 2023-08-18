@@ -3,8 +3,10 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     extend: {
-      color:{
-        'puladiant':'hsl(326.59,80%,21.57%)'
+      colors:{
+        'pulangred':'#630b3c',
+        'guray':'hsl(217.89,10.61%,64.9%)',
+        'light-guray' : '#f3f4f6'
       },
     },
   },

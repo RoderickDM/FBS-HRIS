@@ -7,24 +7,28 @@
     <link rel="stylesheet" href="../dist/output.css">
 </head>
 <body>
-    <div class="flex flex-col justify-center items-center h-[70vh]">
-        <div class="w-96 p-6 flex flex-col justify-center">
-            <img src="../img/logo-fbs.png" alt="" class="block align-middle">
-        <h3 class="text-pulangred text-center my-2 font-semibold">ONLINE HRIS</h3>
-        <p class="mt-8 mb-5">LOGIN</p>
-        </div>
+    <div class="flex flex-col justify-center items-center h-[58vh] md:h-[64vh] lg:h-[70vh]">
+        <div class="w-96 p-6 flex flex-col justify-center ">
+            <div class="flex flex-col items-center">
+                <img src="../img/logo-fbs.png" alt="" class="w-[15rem]">
+                <h3 class="text-pulangred text-center my-2 font-semibold">ONLINE HRIS</h3>
+            </div> 
+        <p class="mt-6 mb-5 font-semibold text-[1.2rem]">LOGIN</p>
         <form action="#">
-            <div>
-                <input type="text" name="email">
+            <div class="mb-6">
+                <input type="text" name="email" class="block w-full rounded-md border-[1px] p-2">
                 <!-- <label for="email">Email</label> -->
             </div>
-            <div>
-                <input type="text" text="password">
+            <div class="mb-6">
+                <input type="text" text="password" class="block w-full rounded-md border-[1px] p-2">
                 <!-- <label for="password">Password</label> -->
+            </div class="pt-3">
+                <button class="inline-block border-[1px] py-2 bg-pulangred text-white rounded-full w-full">Login</button>
             </div>
         </form>
-        <a href="">Login</a>
-        <p>Did you forget your password?<a href="">Forgot password</a></p>
+        <p class="text-[1rem]">Did you forget your password? <a href="" class="underline text-pulangred">Forgot password</a></p>
     </div>
+        </div>
+        
 </body>
 </html>

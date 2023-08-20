@@ -1455,6 +1455,30 @@ video {
   opacity: 0.8;
 }
 
+.outline {
+  outline-style: solid;
+}
+
+.outline-\[1px\] {
+  outline-width: 1px;
+}
+
+.outline-1 {
+  outline-width: 1px;
+}
+
+.outline-\[\.5\] {
+  outline-width: .5;
+}
+
+.outline-pulangred {
+  outline-color: #630b3c;
+}
+
+.outline-\[1pz\] {
+  outline-color: 1pz;
+}
+
 @font-face{
   font-family: Poppins;
 
